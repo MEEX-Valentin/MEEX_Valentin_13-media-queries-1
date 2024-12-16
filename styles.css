@@ -1,0 +1,60 @@
+/* ----------------------------- */
+/*   Objectif Media Queries      */
+/* ----------------------------- */
+
+/*
+
+Modifier le design selon la taille du média
+
+Lorsque la taille de la fenêtre est inférieure à 640 pixels, la couleur de l'arrière-plan des paragraphes doit devenir "maroon", la couleur des textes doit devenir #dd0.
+
+*/
+
+html {
+	padding: 10px 50px;
+}
+body {
+	background: #F1EFE2;
+	font-size: 1.4em;
+	line-height: 1.4;
+	font-family: helvetica, arial, sans-serif;
+}
+h1 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	color: #567;
+}
+p.toto {
+	padding: 10px 20px;
+	background: hotpink;
+	color: #fff;
+	width: 80%;
+	margin: 1em auto;
+	max-width: 60em;
+}
+
+/*@media (max-width: 640px) {
+		p{
+			background: darkmagenta;
+			color: lightcoral;
+	}
+}*/
+
+@media (width <= 640px) {
+		p.toto{
+			background: darkmagenta;
+			color: lightcoral;
+	}
+}
+@media (min-width: 640px) and (max-width: 900px) {
+	p.toto{
+		background: darkgreen;
+		color: azure;
+	}
+}
+@media (min-width <= 9000px) {
+	p.toto{
+		background: hotpink;
+		color: #fff;
+	}
+}
