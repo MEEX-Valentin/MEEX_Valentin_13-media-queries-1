@@ -33,12 +33,7 @@ p.toto {
 	max-width: 60em;
 }
 
-/*@media (max-width: 640px) {
-		p{
-			background: darkmagenta;
-			color: lightcoral;
-	}
-}*/
+
 
 @media (width <= 640px) {
 		p.toto{
